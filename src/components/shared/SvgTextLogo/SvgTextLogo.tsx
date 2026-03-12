@@ -1,51 +1,51 @@
-"use client";
-
-import { memo } from "react";
-import useSvgTextLogo from "./useSvgTextLogo";
-import { cls } from "@/lib/utils";
+import React from 'react';
 
 interface SvgTextLogoProps {
-  logoText: string;
-  adjustHeightFactor?: number;
-  verticalAlign?: "top" | "center";
+  text: string;
   className?: string;
+  fontSize?: number;
+  fontWeight?: number | string;
+  letterSpacing?: number;
+  fillColor?: string;
 }
 
-const SvgTextLogo = memo<SvgTextLogoProps>(function SvgTextLogo({
-  logoText,
-  adjustHeightFactor,
-  verticalAlign = "top",
-  className = "",
-}) {
-  const { svgRef, textRef, viewBox, aspectRatio } = useSvgTextLogo(logoText, false, adjustHeightFactor);
+const SvgTextLogo: React.FC<SvgTextLogoProps> = ({
+  text,
+  className = '',
+  fontSize = 48,
+  fontWeight = 700,
+  letterSpacing = 2,
+  fillColor = 'currentColor',
+}) => {
+  // Measure text width by calculating approximate character width
+  const charWidth = fontSize * 0.6;
+  const textWidth = text.length * charWidth + (text.length - 1) * letterSpacing;
+  const padding = fontSize * 0.2;
+  const svgWidth = textWidth + padding * 2;
+  const svgHeight = fontSize * 1.5;
 
   return (
     <svg
-      ref={svgRef}
-      viewBox={viewBox}
-      className={cls("w-full", className)}
-      style={{ aspectRatio: aspectRatio }}
-      preserveAspectRatio="none"
-      role="img"
-      aria-label={`${logoText} logo`}
+      width={svgWidth}
+      height={svgHeight}
+      viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label={text}
     >
       <text
-        ref={textRef}
-        x="0"
-        y={verticalAlign === "center" ? "50%" : "0"}
-        className="font-bold fill-current"
-        style={{
-          fontSize: "20px",
-          letterSpacing: "-0.02em",
-          dominantBaseline: verticalAlign === "center" ? "middle" : "text-before-edge"
-        }}
+        x={padding}
+        y={fontSize}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        letterSpacing={letterSpacing}
+        fill={fillColor}
+        dominantBaseline="middle"
       >
-        {logoText}
+        {text}
       </text>
     </svg>
   );
-});
-
-SvgTextLogo.displayName = "SvgTextLogo";
+};
 
 export default SvgTextLogo;
