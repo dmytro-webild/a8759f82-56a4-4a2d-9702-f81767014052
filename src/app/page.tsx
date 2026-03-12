@@ -363,8 +363,8 @@ export default function LandingPage() {
           description="Download PC Optimizer today and experience the difference professional optimization can make. Join millions of users enjoying faster, cleaner, more efficient computers."
           background={{ variant: 'downward-rays-animated-grid' }}
           useInvertedBackground={false}
-          inputPlaceholder="Get instant download link"
-          buttonText="Download Free"
+          inputPlaceholder="Enter your email"
+          buttonText="Get Download Link"
           termsText="We respect your privacy. Unsubscribe at any time. Check our privacy policy for details."
           ariaLabel="Download and Contact Section"
         />
