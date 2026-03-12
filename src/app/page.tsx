@@ -41,10 +41,10 @@ const featuresData = [
     title: 'CPU Performance Boost',
     description: 'Optimize processor usage, terminate background processes, and maximize your CPU\'s potential for faster application performance.',
     phoneOne: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/close-up-of-a-computer-processor-chip-wi-1773350901486-39810724.png'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/close-up-of-a-computer-processor-chip-wi-1773350901486-39810724.png?_wi=1'
     },
     phoneTwo: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/close-up-of-a-computer-processor-chip-wi-1773350901486-39810724.png'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/close-up-of-a-computer-processor-chip-wi-1773350901486-39810724.png?_wi=2'
     }
   },
   {
@@ -52,10 +52,10 @@ const featuresData = [
     title: 'RAM Memory Optimization',
     description: 'Intelligently manage system memory, clear cache, and reclaim gigabytes of RAM for smoother multitasking.',
     phoneOne: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/digital-representation-of-ram-memory-sti-1773350899333-5a984609.png'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/digital-representation-of-ram-memory-sti-1773350899333-5a984609.png?_wi=1'
     },
     phoneTwo: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/digital-representation-of-ram-memory-sti-1773350899333-5a984609.png'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/digital-representation-of-ram-memory-sti-1773350899333-5a984609.png?_wi=2'
     }
   },
   {
@@ -63,10 +63,10 @@ const featuresData = [
     title: 'Disk Cleanup & Optimization',
     description: 'Remove unnecessary files, defragment your drive, and organize storage for faster boot times and application loading.',
     phoneOne: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/hard-drive-or-ssd-with-cleaning-optimiza-1773350900330-7817db8d.jpg'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/hard-drive-or-ssd-with-cleaning-optimiza-1773350900330-7817db8d.jpg?_wi=1'
     },
     phoneTwo: {
-      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/hard-drive-or-ssd-with-cleaning-optimiza-1773350900330-7817db8d.jpg'
+      imageSrc: 'https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ArVkpnmdCwfZcIPMkDBFJf1Cwy/hard-drive-or-ssd-with-cleaning-optimiza-1773350900330-7817db8d.jpg?_wi=2'
     }
   }
 ];
